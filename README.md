@@ -1,3 +1,6 @@
+This project was built as a practical DevOps showcase aligned with real job requirements, focusing on automation, CI/CD, and containerized services.
+
+
 # DevOps Automation Platform
 
 A small-scale DevOps automation platform designed to simulate real production
@@ -73,90 +76,76 @@ Start all services using Docker Compose:
 ```bash
 docker compose up --build
 
-Services
-Backend API
+## Services
 
+### Backend API
 http://localhost:3000
 
-n8n UI
-
+### n8n UI
 http://localhost:5678
 
-API Endpoints
-Health Check
+
+## API Endpoints
+
+### Health Check
 GET /health
 
-
 Response:
-
 {
   "status": "ok"
 }
 
-Create Task
+### Create Task
 POST /tasks
 
-
 Body:
-
 {
   "name": "Example task"
 }
 
-Automation Workflow (n8n)
+---
+## Automation Workflow (n8n)
 
-Webhook receives task creation request
-
-Input validation is performed
-
-Backend API is called to create and run the task
-
-A structured JSON response is returned
+- Webhook receives task creation request
+- Input validation is performed
+- Backend API is called to create and run the task
+- A structured JSON response is returned
 
 This mirrors real-world automation and integration workflows.
 
-Testing
+---
+## Testing
 
 Run backend tests locally:
 
-cd backend
+cd backend  
 npm test
 
-
 Tests cover:
+- Task creation
+- Task execution lifecycle
 
-Task creation
-
-Task execution lifecycle
-
-Why This Project?
+---
+## Why This Project?
 
 This project was built to demonstrate hands-on DevOps skills, including:
+- CI/CD pipeline implementation
+- Docker and container orchestration
+- Automation workflows
+- Linux-based service management and troubleshooting
+- Practical debugging of real infrastructure issues
+---
 
-CI/CD pipeline implementation
+## Alignment with Job Requirements
 
-Docker and container orchestration
+- CI/CD Pipelines: Implemented using GitHub Actions
+- Docker & Linux: Services run in Docker containers in a Linux environment
+- Automation: n8n workflows simulate production automation scenarios
+- IT Support & Troubleshooting: Includes debugging of APIs, containers, networking, and CI pipelines
+- Monitoring & Stability: Health check endpoint and structured logging
 
-Automation workflows
-
-Linux-based service management and troubleshooting
-
-Practical debugging of real infrastructure issues
-
-Alignment with Job Requirements
-
-CI/CD Pipelines: Implemented using GitHub Actions
-
-Docker & Linux: Services run in Docker containers in a Linux environment
-
-Automation: n8n workflows simulate production automation scenarios
-
-IT Support & Troubleshooting: Includes debugging of APIs, containers,
-networking, and CI pipelines
-
-Monitoring & Stability: Health check endpoint and structured logging
-
-Status
+---
+## Status
 
 This project is complete and suitable for use as a professional portfolio
 demonstrating DevOps and automation skills.
