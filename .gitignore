@@ -1,0 +1,16 @@
+# Node
+node_modules/
+npm-debug.log
+
+# SQLite
+*.db
+
+# n8n
+.n8n/
+n8n_data/
+
+# Docker
+*.env
+
+# OS
+.DS_Store
