@@ -68,6 +68,14 @@ The project includes a GitHub Actions CI pipeline that runs on every push:
 This ensures consistent builds, early error detection, and reliable automation.
 
 ---
+## Architecture Overview
+
+![Architecture Diagram](docs/architecture-diagram.png)
+---
+## Automation Workflow (n8n)
+
+![n8n Workflow](docs/n8n-workflow.png)
+---
 
 ## Running the Project Locally
 
@@ -149,4 +157,5 @@ This project was built to demonstrate hands-on DevOps skills, including:
 
 This project is complete and suitable for use as a professional portfolio
 demonstrating DevOps and automation skills.
+
 
